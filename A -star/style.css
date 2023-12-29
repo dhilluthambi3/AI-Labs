@@ -1,0 +1,58 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 2px;
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-square {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 4px; /* Rounded corners for each cell */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    color: #333;
+    transition: transform 0.2s ease-in-out;
+}
+
+.grid-square:hover {
+    transform: translateY(-2px); /* Subtle hover effect */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.grid-square.start {
+    background-color: green;
+}
+
+.grid-square.end {
+    background-color: red;
+}
+
+.grid-square.wall {
+    background-color: black;
+}
+
+.grid-square.path {
+    background-color: yellow;
+}
+
+#observationBox {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+#observationBox {
+    max-height: 200px; /* Adjust as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
